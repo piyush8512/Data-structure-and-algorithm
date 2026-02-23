@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Solution {
+public class Minimize_Maximum_Pair_Sum_in_Array {
 
     public int minPairSum(int[] nums) {
         Arrays.sort(nums);
@@ -16,9 +16,9 @@ public class Solution {
         }
         return maxSum;
     }
-
-    public static void 1877_Minimize_Maximum_Pair_Sum_in_Array(String[] args) {
-        Solution solution = new Solution();
+//1877_Minimize_Maximum_Pair_Sum_in_Array
+    public static void Minimize_Maximum(String[] args) {
+        Minimize_Maximum_Pair_Sum_in_Array solution = new Minimize_Maximum_Pair_Sum_in_Array();
 
         int[] nums1 = {3, 5, 2, 3};
         System.out.println("Test 1: " + solution.minPairSum(nums1)); // 7
