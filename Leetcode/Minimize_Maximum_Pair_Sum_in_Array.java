@@ -1,3 +1,4 @@
+package leetcode;
 import java.util.Arrays;
 
 public class Minimize_Maximum_Pair_Sum_in_Array {

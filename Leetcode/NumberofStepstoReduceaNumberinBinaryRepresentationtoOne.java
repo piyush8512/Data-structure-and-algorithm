@@ -1,4 +1,4 @@
-package Leetcode;
+package leetcode;
 
 // public class Number of Steps to ReduceaNumberinBinaryRepresentationtoOne {
 
