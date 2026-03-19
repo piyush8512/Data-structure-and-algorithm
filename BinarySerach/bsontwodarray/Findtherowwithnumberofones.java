@@ -58,7 +58,7 @@ class Solution {
     public int rowWithMax1s(int[][] matrix, int n, int m) {
         int cnt_max = 0;
         int index = -1;
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             int cnt_ones = m - lowerBound(matrix[i], m, 1);
             if (cnt_ones > cnt_max) {
                 cnt_max = cnt_ones;
@@ -69,7 +69,7 @@ class Solution {
     }
 }
 
-public class Main {
+public class Findtherowwithnumberofones {
     public static void main(String[] args) {
         int[][] matrix = { { 1, 1, 1 }, { 0, 0, 1 }, { 0, 0, 0 } };
         int n = 3, m = 3;
@@ -78,5 +78,6 @@ public class Main {
     }
 }
 
-//tc: O(n*log(m)) where n is the number of rows and m is the number of columns in the matrix
-//sc: O(1) as we are using only a constant amount of extra space for    
+// tc: O(n*log(m)) where n is the number of rows and m is the number of columns
+// in the matrix
+// sc: O(1) as we are using only a constant amount of extra space for
