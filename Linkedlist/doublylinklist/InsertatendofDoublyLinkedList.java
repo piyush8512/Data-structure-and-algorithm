@@ -58,7 +58,7 @@ class Solution {
     }
 }
 
-public class Main {
+public class InsertatendofDoublyLinkedList {
 
     public static void main(String[] args) {
         int[] arr = {12, 5, 8, 7, 4};
