@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-public class Main {
+public class RecursiveImplementationofatoi {
     public static void main(String[] args) {
         String s = "   -12345";
         System.out.println(Solution.myAtoi(s));
