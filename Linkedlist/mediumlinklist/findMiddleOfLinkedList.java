@@ -72,7 +72,7 @@ class Node {
     }
 }
 
-public class FindMiddleOfLinkedList {
+public class findMiddleOfLinkedList {
 
     static Node findMiddle(Node head) {
         Node slow = head;

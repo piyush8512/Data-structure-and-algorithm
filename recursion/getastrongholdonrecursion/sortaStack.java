@@ -1,4 +1,7 @@
+package getastrongholdonrecursion;
 import java.util.Stack;
+
+import Solution;
 
 class Solution {
     public void insert(Stack<Integer> stack, int temp) {
