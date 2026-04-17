@@ -23,7 +23,7 @@ class Solution {
         }
         return count;
     }
-}
+} 
 
 // Main class to test the Solution class
 public class countthenumberofsetbits {
