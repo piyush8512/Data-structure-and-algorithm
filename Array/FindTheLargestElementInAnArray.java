@@ -1,4 +1,4 @@
-package Array.Easy;
+
 
 // ---------code--brute force approach--sorting
 // public class FindTheLargestElementInAnArray {

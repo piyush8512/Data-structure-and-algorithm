@@ -1,0 +1,46 @@
+# Array Questions List
+
+| No. | Question Name                                     | File                                                                                                             |
+| --- | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 1   | ArrayManipulator                                  | [ArrayManipulator.java](ArrayManipulator.java)                                                                   |
+| 2   | CheckifAllAsAppearsBeforeAllBs                    | [CheckifAllAsAppearsBeforeAllBs.java](CheckifAllAsAppearsBeforeAllBs.java)                                       |
+| 3   | CheckIfAnArrayIsSorted                            | [CheckIfAnArrayIsSorted.java](CheckIfAnArrayIsSorted.java)                                                       |
+| 4   | CheckifArrayIsSortedandRotated                    | [CheckifArrayIsSortedandRotated.java](CheckifArrayIsSortedandRotated.java)                                       |
+| 5   | ContainerWithMostWater                            | [ContainerWithMostWater.java](ContainerWithMostWater.java)                                                       |
+| 6   | ContainsDuplicateCheckifavalueappearsatleasttwice | [ContainsDuplicateCheckifavalueappearsatleasttwice.java](ContainsDuplicateCheckifavalueappearsatleasttwice.java) |
+| 7   | Countinversionsinanarray                          | [Countinversionsinanarray.java](Countinversionsinanarray.java)                                                   |
+| 8   | CountMaximumConsecutiveOnesinthearray             | [CountMaximumConsecutiveOnesinthearray.java](CountMaximumConsecutiveOnesinthearray.java)                         |
+| 9   | CountReversePairs                                 | [CountReversePairs.java](CountReversePairs.java)                                                                 |
+| 10  | countsubarraysumequalsk                           | [countsubarraysumequalsk.java](countsubarraysumequalsk.java)                                                     |
+| 11  | CountthenumberofsubarrayswithgivenxorK            | [CountthenumberofsubarrayswithgivenxorK.java](CountthenumberofsubarrayswithgivenxorK.java)                       |
+| 12  | ElementAppearMorethannBythreeTimes                | [ElementAppearMorethannBythreeTimes.java](ElementAppearMorethannBythreeTimes.java)                               |
+| 13  | findnextlexicographicallygreaterpermutation       | [findnextlexicographicallygreaterpermutation.java](findnextlexicographicallygreaterpermutation.java)             |
+| 14  | FindQuadsthatadduptoatargetvalue                  | [FindQuadsthatadduptoatargetvalue.java](FindQuadsthatadduptoatargetvalue.java)                                   |
+| 15  | findtheDuplicateNumber                            | [findtheDuplicateNumber.java](findtheDuplicateNumber.java)                                                       |
+| 16  | FindTheLargestElementInAnArray                    | [FindTheLargestElementInAnArray.java](FindTheLargestElementInAnArray.java)                                       |
+| 17  | FindtheMajorityElementthatoccursmorethanNBy2times | [FindtheMajorityElementthatoccursmorethanNBy2times.java](FindtheMajorityElementthatoccursmorethanNBy2times.java) |
+| 18  | Findthenumberthatappearsonce                      | [Findthenumberthatappearsonce.java](Findthenumberthatappearsonce.java)                                           |
+| 19  | Findtherepeatingandmissingnumbers                 | [Findtherepeatingandmissingnumbers.java](Findtherepeatingandmissingnumbers.java)                                 |
+| 20  | KadaneAlgorithmMaximumSubarraySuminanArray        | [KadaneAlgorithmMaximumSubarraySuminanArray.java](KadaneAlgorithmMaximumSubarraySuminanArray.java)               |
+| 21  | LeadersinanArray                                  | [LeadersinanArray.java](LeadersinanArray.java)                                                                   |
+| 22  | LeftRotatetheArraybyOne                           | [LeftRotatetheArraybyOne.java](LeftRotatetheArraybyOne.java)                                                     |
+| 23  | LengthofthelongestsubarraywithzeroSum             | [LengthofthelongestsubarraywithzeroSum.java](LengthofthelongestsubarraywithzeroSum.java)                         |
+| 24  | LongestConsecutiveSequenceinanArray               | [LongestConsecutiveSequenceinanArray.java](LongestConsecutiveSequenceinanArray.java)                             |
+| 25  | LongestSubarraywithgivenSum                       | [LongestSubarraywithgivenSum.java](LongestSubarraywithgivenSum.java)                                             |
+| 26  | MainThreeSumProblem                               | [MainThreeSumProblem.java](MainThreeSumProblem.java)                                                             |
+| 27  | MaximumProductSubarrayinanArray                   | [MaximumProductSubarrayinanArray.java](MaximumProductSubarrayinanArray.java)                                     |
+| 28  | MergeOverlappingSubintervals                      | [MergeOverlappingSubintervals.java](MergeOverlappingSubintervals.java)                                           |
+| 29  | MergetwoSortedArraysWithoutExtraSpace             | [MergetwoSortedArraysWithoutExtraSpace.java](MergetwoSortedArraysWithoutExtraSpace.java)                         |
+| 30  | missingNumberarray                                | [missingNumberarray.java](missingNumberarray.java)                                                               |
+| 31  | MoveallZerostotheendofthearray                    | [MoveallZerostotheendofthearray.java](MoveallZerostotheendofthearray.java)                                       |
+| 32  | ProgramtogeneratePascalTriangle                   | [ProgramtogeneratePascalTriangle.java](ProgramtogeneratePascalTriangle.java)                                     |
+| 33  | RemoveDuplicatesinplacefromSortedArray            | [RemoveDuplicatesinplacefromSortedArray.java](RemoveDuplicatesinplacefromSortedArray.java)                       |
+| 34  | RotatearraybyKelements                            | [RotatearraybyKelements.java](RotatearraybyKelements.java)                                                       |
+| 35  | RotateImageby90degree                             | [RotateImageby90degree.java](RotateImageby90degree.java)                                                         |
+| 36  | SecondLargestElementInAnArrayWithoutSorting       | [SecondLargestElementInAnArrayWithoutSorting.java](SecondLargestElementInAnArrayWithoutSorting.java)             |
+| 37  | SetMatrixZero                                     | [SetMatrixZero.java](SetMatrixZero.java)                                                                         |
+| 38  | Sortanarrayof0s1sand2s                            | [Sortanarrayof0s1sand2s.java](Sortanarrayof0s1sand2s.java)                                                       |
+| 39  | SpiralTraversalofMatrix                           | [SpiralTraversalofMatrix.java](SpiralTraversalofMatrix.java)                                                     |
+| 40  | StockBuyAndSell                                   | [StockBuyAndSell.java](StockBuyAndSell.java)                                                                     |
+| 41  | TwoSum                                            | [TwoSum.java](TwoSum.java)                                                                                       |
+| 42  | unionoftwosortedarray                             | [unionoftwosortedarray.java](unionoftwosortedarray.java)                                                         |

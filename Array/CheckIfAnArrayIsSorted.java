@@ -1,4 +1,4 @@
-package Array.Easy;
+
 
 //bruteforce approach
 // class Solution {

@@ -1,4 +1,4 @@
-package Array.Easy;
+
 
 //--- code  1 naive Approach   when array is sorted  and no duplicates 
 // class SecondLargestElementInAnArrayWithoutSorting {

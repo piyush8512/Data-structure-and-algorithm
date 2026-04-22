@@ -1,4 +1,4 @@
-package Array.Easy;
+
 
 ///leetcode 189 Left Rotate the Array by One
 /// bruteforce approach using temporary array
