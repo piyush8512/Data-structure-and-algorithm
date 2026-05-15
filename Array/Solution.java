@@ -48,7 +48,7 @@ class commonElements {
         while (i < a.length && j < b.length && k < c.length) {
 
             if (a[i] == b[j] && b[j] == c[k]) {
-                if (result.isEmpty() || result.get(result.size()-1) != a[i]) {
+                if (result.isEmpty() || result.get(result.size()-1) != a[i]) {vjfgj
                     result.add(a[i]);
                 }
                 i++; j++; k++;
