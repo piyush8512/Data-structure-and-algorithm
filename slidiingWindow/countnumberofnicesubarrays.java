@@ -1,70 +1,103 @@
-// // // public class countnumberofnicesubarrays {
+// // // // public class countnumberofnicesubarrays {
     
+// // // // }
+
+
+// // // //brute force approach  
+// // // class Solution {
+// // //     public int numberOfSubarrays(int[] nums, int k) {
+// // //         int count = 0;
+// // //         for (int start = 0; start < nums.length; start++) {
+// // //             int oddCount = 0;
+// // //             for (int end = start; end < nums.length; end++) {
+// // //                 if (nums[end] % 2 != 0)
+// // //                     oddCount++;
+// // //                 if (oddCount > k)
+// // //                     break;
+// // //                 if (oddCount == k)
+// // //                     count++;
+// // //             }
+// // //         }
+// // //         return count;
+// // //     }
+// // // }
+
+// // // // Separate driver class with main method
+// // // public class countnumberofnicesubarrays {
+// // //     public static void main(String[] args) {
+// // //         Solution sol = new Solution();
+// // //         int[] nums = {1, 1, 2, 1, 1};
+// // //         int k = 3;
+// // //         System.out.println(sol.numberOfSubarrays(nums, k));
+// // //     }
 // // // }
 
 
-// // //brute force approach  
+
+// // //better solution 
+// // import java.util.*;
+
 // // class Solution {
 // //     public int numberOfSubarrays(int[] nums, int k) {
-// //         int count = 0;
-// //         for (int start = 0; start < nums.length; start++) {
-// //             int oddCount = 0;
-// //             for (int end = start; end < nums.length; end++) {
-// //                 if (nums[end] % 2 != 0)
-// //                     oddCount++;
-// //                 if (oddCount > k)
-// //                     break;
-// //                 if (oddCount == k)
-// //                     count++;
+// //         Map<Integer, Integer> freq = new HashMap<>();
+// //         freq.put(0, 1);
+// //         int oddCount = 0;
+// //         int result = 0;
+// //         for (int num : nums) {
+// //             if (num % 2 == 1) oddCount++;
+// //             if (freq.containsKey(oddCount - k)) {
+// //                 result += freq.get(oddCount - k);
 // //             }
+// //             freq.put(oddCount, freq.getOrDefault(oddCount, 0) + 1);
 // //         }
-// //         return count;
+// //         return result;
 // //     }
 // // }
 
-// // // Separate driver class with main method
 // // public class countnumberofnicesubarrays {
 // //     public static void main(String[] args) {
-// //         Solution sol = new Solution();
 // //         int[] nums = {1, 1, 2, 1, 1};
 // //         int k = 3;
+// //         Solution sol = new Solution();
 // //         System.out.println(sol.numberOfSubarrays(nums, k));
 // //     }
 // // }
 
+// // //tc: O(n) where n is the length of the input array nums. We traverse the array once to count the odd numbers and update the frequency map.
+// // //sc: O(n) in the worst case, if all numbers in the array are odd
 
-
-// //better solution 
-// import java.util.*;
+// //optmial solution 
 
 // class Solution {
-//     public int numberOfSubarrays(int[] nums, int k) {
-//         Map<Integer, Integer> freq = new HashMap<>();
-//         freq.put(0, 1);
-//         int oddCount = 0;
-//         int result = 0;
-//         for (int num : nums) {
-//             if (num % 2 == 1) oddCount++;
-//             if (freq.containsKey(oddCount - k)) {
-//                 result += freq.get(oddCount - k);
+//     public int countAtMost(int[] nums, int k) {
+//         int left = 0, res = 0;
+//         for (int right = 0; right < nums.length; right++) {
+//             if (nums[right] % 2 != 0)
+//                 k--;
+//             while (k < 0) {
+//                 if (nums[left] % 2 != 0)
+//                     k++;
+//                 left++;
 //             }
-//             freq.put(oddCount, freq.getOrDefault(oddCount, 0) + 1);
+//             res += (right - left + 1);
 //         }
-//         return result;
+//         return res;
+//     }
+
+//     public int numberOfSubarrays(int[] nums, int k) {
+//         return countAtMost(nums, k) - countAtMost(nums, k - 1);
 //     }
 // }
 
 // public class countnumberofnicesubarrays {
 //     public static void main(String[] args) {
+//         Solution sol = new Solution();
 //         int[] nums = {1, 1, 2, 1, 1};
 //         int k = 3;
-//         Solution sol = new Solution();
 //         System.out.println(sol.numberOfSubarrays(nums, k));
 //     }
 // }
 
+
 // //tc: O(n) where n is the length of the input array nums. We traverse the array once to count the odd numbers and update the frequency map.
-// //sc: O(n) in the worst case, if all numbers in the array are odd
-
-
-//optmial solution 
+// //sc: O(1) since we are using only a constant amount of extra space for
