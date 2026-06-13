@@ -1,0 +1,73 @@
+// import java.util.*;
+
+
+// //brute force approach 
+// class Solution {
+//     public int subarraysWithKDistinct(int[] nums, int k) {
+//         int count = 0;
+//         for (int i = 0; i < nums.length; i++) {
+//             Map<Integer, Integer> map = new HashMap<>();
+//             for (int j = i; j < nums.length; j++) {
+//                 map.put(nums[j], map.getOrDefault(nums[j], 0) + 1);
+//                 if (map.size() == k)
+//                     count++;
+//                 if (map.size() > k)
+//                     break;
+//             }
+//         }
+//         return count;
+//     }
+// }
+
+// class Main {
+//     public static void main(String[] args) {
+//         Solution sol = new Solution();
+//         int[] nums = {1, 2, 1, 2, 3};
+//         int k = 2;
+//         System.out.println(sol.subarraysWithKDistinct(nums, k));
+//     }
+// }
+
+// //tc: O(n^2) where n is the length of the input array nums. This is because we have two nested loops, each iterating through the array.
+// //sc: O(k) in the worst case, where k is the number of distinct integers
+
+
+
+//optimal solution 
+import java.util.*;
+
+public class Solution {
+    public int atMostK(int[] nums, int K) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        int left = 0, count = 0;
+        for (int right = 0; right < nums.length; right++) {
+            freq.put(nums[right], freq.getOrDefault(nums[right], 0) + 1);
+            if (freq.get(nums[right]) == 1) {
+                K--;
+            }
+            while (K < 0) {
+                freq.put(nums[left], freq.get(nums[left]) - 1);
+                if (freq.get(nums[left]) == 0) {
+                    K++;
+                }
+                left++;
+            }
+            count += (right - left + 1);
+        }
+        return count;
+    }
+
+    public int subarraysWithKDistinct(int[] nums, int k) {
+        return atMostK(nums, k) - atMostK(nums, k - 1);
+    }
+
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        int[] nums = {1, 2, 1, 2, 3};
+        int k = 2;
+        System.out.println(sol.subarraysWithKDistinct(nums, k));
+    }
+}
+
+//tc: O(n) where n is the length of the input array nums. This is because we have a single loop that iterates through the array.
+//sc: O(k) in the worst case, where k is the number of distinct integers
