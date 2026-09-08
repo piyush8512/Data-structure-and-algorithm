@@ -1,0 +1,7 @@
+checkforBalancedParentheses
+removeNthnodefromtheendofaLinkedList
+findtopkelementarrayand haspmap problem
+
+
+question
+Writer Java To print the non repeated  characters from a string using hash map
