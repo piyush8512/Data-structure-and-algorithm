@@ -1,3 +1,6 @@
+//*  check Palindrome  | infosys
+//Check Whether a Number/string is Palindrome or Not
+
 // package recursion.hard;
 
 // public class isPalindrome {

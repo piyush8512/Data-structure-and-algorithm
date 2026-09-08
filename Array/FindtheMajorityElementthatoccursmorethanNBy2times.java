@@ -1,3 +1,4 @@
+//* Majority Element
 
 // //brute force approach
 // class Solution {

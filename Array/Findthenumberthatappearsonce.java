@@ -1,3 +1,4 @@
+//* Single Number 
 
 // //bruteforce approach
 // class Findthenumberthatappearsonce {

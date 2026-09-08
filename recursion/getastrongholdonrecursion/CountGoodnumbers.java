@@ -1,3 +1,5 @@
+//* prime numbr | infosys
+
 package getastrongholdonrecursion;
 // public class CountGoodnumbers {
     
