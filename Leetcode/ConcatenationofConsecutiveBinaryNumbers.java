@@ -1,4 +1,5 @@
-// package leetcode;
+//*  Power of Two | infosys
+
 // package Leetcode;
 
 // public class ConcatenationofConsecutiveBinaryNumbers {
